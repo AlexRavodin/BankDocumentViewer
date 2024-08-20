@@ -1,9 +1,8 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using BankDocumentViewer.Viewer.Services;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Viewer.Models;
-using Viewer.Services;
 
-namespace Viewer.Extensions;
+namespace BankDocumentViewer.Viewer.Extensions;
 
 public static class AddServicesBuilderExtensions
 {

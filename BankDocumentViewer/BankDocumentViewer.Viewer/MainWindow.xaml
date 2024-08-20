@@ -4,9 +4,33 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BankDocumentViewer.Viewer"
+        xmlns:views="clr-namespace:BankDocumentViewer.Viewer.Views"
+        xmlns:viewModels="clr-namespace:BankDocumentViewer.Viewer.ViewModels"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="Загрузчик" Height="450" Width="1000"
+        WindowStartupLocation="CenterScreen">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid MaxWidth="1000" Margin="20 10">
+            
+            <Grid.Resources>
+                <DataTemplate DataType="{x:Type viewModels:MenuViewModel}">
+                    <views:MenuView />
+                </DataTemplate>
+                
+                <DataTemplate DataType="{x:Type viewModels:GenerateViewModel}">
+                    <views:GenerateView />
+                </DataTemplate>
+                
+                <DataTemplate DataType="{x:Type viewModels:FilesListViewModel}">
+                    <views:FilesListView />
+                </DataTemplate>
+                
+                <DataTemplate DataType="{x:Type viewModels:OperationsListViewModel}">
+                    <views:OperationsListView />
+                </DataTemplate>
+            </Grid.Resources>
+            
+            <ContentControl Content="{Binding CurrentViewModel}" />
+        </Grid>
+    </ScrollViewer>
 </Window>

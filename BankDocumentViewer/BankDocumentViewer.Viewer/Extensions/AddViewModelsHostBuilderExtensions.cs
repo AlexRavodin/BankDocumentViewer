@@ -1,9 +1,9 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using BankDocumentViewer.Viewer.Services;
+using BankDocumentViewer.Viewer.ViewModels;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Viewer.Services;
-using Viewer.ViewModels;
 
-namespace Viewer.Extensions;
+namespace BankDocumentViewer.Viewer.Extensions;
 
 public static class AddViewModelsHostBuilderExtensions
 {
