@@ -1,4 +1,4 @@
-﻿namespace Viewer.Models.Dto;
+﻿namespace BankDocumentViewer.Viewer.Data.Dto;
 
 public class OperationClassDto
 {

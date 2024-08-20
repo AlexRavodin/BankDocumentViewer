@@ -1,4 +1,4 @@
-﻿namespace Viewer.Models;
+﻿namespace BankDocumentViewer.Viewer.Data.Entities;
 
 public class Operation
 {

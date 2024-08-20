@@ -1,4 +1,4 @@
-﻿namespace Viewer.Models.Options;
+﻿namespace BankDocumentViewer.Viewer.Data.Options;
 
 public class FilesOptions
 {
