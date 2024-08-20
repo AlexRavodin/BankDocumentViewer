@@ -1,0 +1,129 @@
+﻿<UserControl x:Class="Viewer.Views.OperationsListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Viewer.Views"
+             xmlns:converters="clr-namespace:Viewer.Converters"
+             xmlns:loadingSpinnerControl="clr-namespace:LoadingSpinnerControl;assembly=LoadingSpinnerControl"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock
+                FontSize="18"
+                Grid.Column="0"
+                Text="{Binding Filename}" />
+            
+            <Button
+                FontSize="18"
+                Grid.Column="1"
+                Margin="10,0,0,0"
+                Content="Назад"
+                Command="{Binding GoBackCommand}"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="0,25,0,0">
+
+            <loadingSpinnerControl:LoadingSpinner
+                Diameter="100"
+                IsLoading="{Binding IsLoading}"
+                Thickness="5"
+                Color="Black" />
+            
+            <Grid>
+                
+                <Grid.Visibility>
+                    <Binding Path="IsLoading">
+                        <Binding.Converter>
+                            <converters:InverseBooleanToVisibilityConverter />
+                        </Binding.Converter>
+                    </Binding>
+                </Grid.Visibility>
+                
+                <ListView ItemsSource="{Binding Operations}">
+                    
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Б/сч" Width="40">
+                                    <GridViewColumn.CellTemplate >
+                                        <DataTemplate>
+                                            <TextBlock HorizontalAlignment="Center" Text="{Binding AccountingCode}" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+
+                                <GridViewColumn Header="Входящее сальдо(а)">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Padding="0,0,20,0" Text="{Binding ActiveSaldoIn}"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                
+                                <GridViewColumn Header="Входящее сальдо(п)">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Padding="0,0,20,0" Text="{Binding PassiveSaldoIn}"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+
+                                <GridViewColumn Header="Дебет" Width="110">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Padding="0,0,20,0" Text="{Binding Debit}"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                
+                                <GridViewColumn Header="Кредит" Width="110">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Padding="0,0,20,0" Text="{Binding Credit}"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                
+                                <GridViewColumn Header="Исходящее сальдо(а)">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Padding="0,0,20,0" Text="{Binding ActiveSaldoOut}"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                
+                                <GridViewColumn Header="Исходящее сальдо(п)">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Padding="0,0,20,0" Text="{Binding PassiveSaldoOut}"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                
+                                <GridViewColumn Header="Класс" Width="300">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Padding="0,0,20,0" Text="{Binding ClassName}"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                
+                            </GridView>
+                        </ListView.View>
+                        
+                    </ListView>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>
