@@ -1,6 +1,6 @@
-﻿using Viewer.ViewModels;
+﻿using BankDocumentViewer.Viewer.ViewModels;
 
-namespace Viewer.Stores
+namespace BankDocumentViewer.Viewer.Stores
 {
     public class NavigationStore
     {

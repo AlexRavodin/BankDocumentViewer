@@ -1,10 +1,7 @@
 ﻿using System.Windows.Input;
-using Viewer.Commands;
-using Viewer.Models;
-using Viewer.Models.Options;
-using Viewer.Services;
+using BankDocumentViewer.Viewer.Commands;
 
-namespace Viewer.ViewModels;
+namespace BankDocumentViewer.Viewer.ViewModels;
 
 public class GenerateViewModel : ViewModelBase
 {

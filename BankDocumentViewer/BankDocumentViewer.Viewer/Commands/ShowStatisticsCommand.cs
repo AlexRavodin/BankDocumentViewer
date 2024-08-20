@@ -1,8 +1,7 @@
 ﻿using System.Windows;
-using Viewer.Services;
-using Viewer.ViewModels;
+using BankDocumentViewer.Viewer.ViewModels;
 
-namespace Viewer.Commands;
+namespace BankDocumentViewer.Viewer.Commands;
 
 public class ShowStatisticsCommand : AsyncCommandBase
 {

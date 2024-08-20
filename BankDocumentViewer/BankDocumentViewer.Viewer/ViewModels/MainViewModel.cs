@@ -1,6 +1,6 @@
-﻿using Viewer.Stores;
+﻿using BankDocumentViewer.Viewer.Stores;
 
-namespace Viewer.ViewModels
+namespace BankDocumentViewer.Viewer.ViewModels
 {
     public class MainViewModel : ViewModelBase 
     {

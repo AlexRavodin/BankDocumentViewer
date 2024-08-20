@@ -1,7 +1,6 @@
 ﻿using System.Windows.Input;
-using Viewer.Models.Dto;
 
-namespace Viewer.ViewModels;
+namespace BankDocumentViewer.Viewer.ViewModels;
 
 public class FileViewModel : ViewModelBase
 {

@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace Viewer.Views;
+namespace BankDocumentViewer.Viewer.Views;
 
 public partial class FilesListView : UserControl
 {

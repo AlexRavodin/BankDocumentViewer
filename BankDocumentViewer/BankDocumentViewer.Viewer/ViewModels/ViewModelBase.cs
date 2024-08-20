@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace Viewer.ViewModels
+namespace BankDocumentViewer.Viewer.ViewModels
 {
     public abstract class ViewModelBase : INotifyPropertyChanged
     {

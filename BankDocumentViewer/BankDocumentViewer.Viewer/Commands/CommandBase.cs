@@ -1,6 +1,6 @@
 ﻿using System.Windows.Input;
 
-namespace Viewer.Commands
+namespace BankDocumentViewer.Viewer.Commands
 {
     public abstract class CommandBase : ICommand
     {

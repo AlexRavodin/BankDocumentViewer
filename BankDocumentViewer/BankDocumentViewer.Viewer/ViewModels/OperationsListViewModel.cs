@@ -1,10 +1,8 @@
 ﻿using System.Collections.ObjectModel;
 using System.Windows.Input;
-using Viewer.Commands;
-using Viewer.Models.Dto;
-using Viewer.Services;
+using BankDocumentViewer.Viewer.Commands;
 
-namespace Viewer.ViewModels;
+namespace BankDocumentViewer.Viewer.ViewModels;
 
 public class OperationsListViewModel : ViewModelBase
 {

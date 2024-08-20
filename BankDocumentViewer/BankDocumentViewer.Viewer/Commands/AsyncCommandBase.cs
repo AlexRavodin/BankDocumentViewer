@@ -1,4 +1,4 @@
-﻿namespace Viewer.Commands
+﻿namespace BankDocumentViewer.Viewer.Commands
 {
     public abstract class AsyncCommandBase : CommandBase
     {

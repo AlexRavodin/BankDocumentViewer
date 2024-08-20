@@ -1,9 +1,7 @@
 ﻿using System.Windows;
-using Viewer.Models.Options;
-using Viewer.Services;
-using Viewer.ViewModels;
+using BankDocumentViewer.Viewer.ViewModels;
 
-namespace Viewer.Commands;
+namespace BankDocumentViewer.Viewer.Commands;
 
 public class UploadLinesFromFileCommand : AsyncCommandBase
 {
