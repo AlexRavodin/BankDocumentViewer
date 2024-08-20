@@ -1,6 +1,13 @@
 ﻿using System.Configuration;
 using System.Data;
 using System.Windows;
+using BankDocumentViewer.Viewer.Data.DbContext;
+using BankDocumentViewer.Viewer.Data.Options;
+using BankDocumentViewer.Viewer.Services;
+using BankDocumentViewer.Viewer.Stores;
+using BankDocumentViewer.Viewer.ViewModels;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 namespace BankDocumentViewer.Viewer;
 

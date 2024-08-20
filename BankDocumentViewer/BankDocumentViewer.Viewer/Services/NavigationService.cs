@@ -1,4 +1,7 @@
-﻿namespace BankDocumentViewer.Viewer.Services
+﻿using BankDocumentViewer.Viewer.Stores;
+using BankDocumentViewer.Viewer.ViewModels;
+
+namespace BankDocumentViewer.Viewer.Services
 {
     public class NavigationService<TViewModel> where TViewModel : ViewModelBase
     {

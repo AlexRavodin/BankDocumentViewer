@@ -1,4 +1,6 @@
-﻿namespace BankDocumentViewer.Viewer.ViewModels;
+﻿using BankDocumentViewer.Viewer.Data.Dto;
+
+namespace BankDocumentViewer.Viewer.ViewModels;
 
 public class OperationViewModel
 {

@@ -1,4 +1,7 @@
-﻿namespace BankDocumentViewer.Viewer.Services;
+﻿using BankDocumentViewer.Viewer.Data.Dto;
+using BankDocumentViewer.Viewer.Data.Entities;
+
+namespace BankDocumentViewer.Viewer.Services;
 
 public interface IDataProvider
 {

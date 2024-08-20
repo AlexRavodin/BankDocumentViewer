@@ -1,4 +1,4 @@
-﻿namespace Viewer.Data.DbContext;
+﻿namespace BankDocumentViewer.Viewer.Data.DbContext;
 
 public interface IAppDbContextFactory
 {

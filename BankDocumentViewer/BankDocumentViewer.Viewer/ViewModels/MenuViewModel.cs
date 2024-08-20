@@ -1,5 +1,6 @@
 ﻿using System.Windows.Input;
 using BankDocumentViewer.Viewer.Commands;
+using BankDocumentViewer.Viewer.Services;
 
 namespace BankDocumentViewer.Viewer.ViewModels;
 

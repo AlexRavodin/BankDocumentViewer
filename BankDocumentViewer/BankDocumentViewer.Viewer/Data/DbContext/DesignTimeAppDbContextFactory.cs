@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Logging;
 
-namespace Viewer.Data.DbContext
+namespace BankDocumentViewer.Viewer.Data.DbContext
 {
     public class DesignTimeAppDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
     {

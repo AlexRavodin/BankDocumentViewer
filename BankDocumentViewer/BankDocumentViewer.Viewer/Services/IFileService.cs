@@ -1,4 +1,6 @@
-﻿namespace BankDocumentViewer.Viewer.Services;
+﻿using BankDocumentViewer.Viewer.Data.Options;
+
+namespace BankDocumentViewer.Viewer.Services;
 
 public interface IFileService
 {

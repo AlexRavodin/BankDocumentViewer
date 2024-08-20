@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using BankDocumentViewer.Viewer.Data.Dto;
 using NPOI.HSSF.UserModel;
 
 namespace BankDocumentViewer.Viewer.Services;
@@ -18,9 +19,8 @@ public class XlsBankDocumentParser : IBankDocumentParser
             for (int rowIndex = 0; rowIndex <= sheet.LastRowNum; rowIndex++)
             {
                 var row = sheet.GetRow(rowIndex);
-                if (row == null) continue;
 
-                var cellValue = row.GetCell(0)?.ToString()?.Trim();
+                var cellValue = row?.GetCell(0)?.ToString()?.Trim();
                 if (cellValue is null) continue;
                 
                 if (cellValue.StartsWith("класс", StringComparison.InvariantCultureIgnoreCase))

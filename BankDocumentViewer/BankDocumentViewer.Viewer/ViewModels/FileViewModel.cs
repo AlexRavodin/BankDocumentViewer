@@ -1,4 +1,5 @@
 ﻿using System.Windows.Input;
+using BankDocumentViewer.Viewer.Data.Dto;
 
 namespace BankDocumentViewer.Viewer.ViewModels;
 

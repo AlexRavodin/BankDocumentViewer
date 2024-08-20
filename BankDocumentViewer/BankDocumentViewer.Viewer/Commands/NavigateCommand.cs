@@ -1,4 +1,5 @@
-﻿using BankDocumentViewer.Viewer.ViewModels;
+﻿using BankDocumentViewer.Viewer.Services;
+using BankDocumentViewer.Viewer.ViewModels;
 
 namespace BankDocumentViewer.Viewer.Commands
 {

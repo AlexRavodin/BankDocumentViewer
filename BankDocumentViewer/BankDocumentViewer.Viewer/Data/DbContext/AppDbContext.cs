@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Viewer.Models;
-using Viewer.Models.Dto;
+﻿using BankDocumentViewer.Viewer.Data.Dto;
+using BankDocumentViewer.Viewer.Data.Entities;
+using Microsoft.EntityFrameworkCore;
 
-namespace Viewer.Data.DbContext;
+namespace BankDocumentViewer.Viewer.Data.DbContext;
 
 public class AppDbContext : Microsoft.EntityFrameworkCore.DbContext
 {

@@ -1,6 +1,8 @@
 ﻿using System.Collections.ObjectModel;
 using System.Windows.Input;
 using BankDocumentViewer.Viewer.Commands;
+using BankDocumentViewer.Viewer.Data.Dto;
+using BankDocumentViewer.Viewer.Services;
 
 namespace BankDocumentViewer.Viewer.ViewModels;
 

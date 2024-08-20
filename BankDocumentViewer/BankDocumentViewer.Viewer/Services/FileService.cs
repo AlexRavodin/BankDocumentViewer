@@ -1,4 +1,6 @@
 ﻿using System.IO;
+using BankDocumentViewer.Viewer.Data.Entities;
+using BankDocumentViewer.Viewer.Data.Options;
 
 namespace BankDocumentViewer.Viewer.Services;
 

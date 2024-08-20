@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using BankDocumentViewer.Viewer.Services;
 using BankDocumentViewer.Viewer.ViewModels;
 using Microsoft.Win32;
 

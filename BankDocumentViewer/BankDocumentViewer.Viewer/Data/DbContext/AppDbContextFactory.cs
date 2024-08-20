@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
-namespace Viewer.Data.DbContext;
+namespace BankDocumentViewer.Viewer.Data.DbContext;
 
 public class AppDbContextFactory : IAppDbContextFactory
 {

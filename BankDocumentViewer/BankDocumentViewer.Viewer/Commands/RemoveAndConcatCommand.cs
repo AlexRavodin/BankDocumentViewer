@@ -1,4 +1,6 @@
 ﻿using System.Windows;
+using BankDocumentViewer.Viewer.Data.Options;
+using BankDocumentViewer.Viewer.Services;
 using BankDocumentViewer.Viewer.ViewModels;
 
 namespace BankDocumentViewer.Viewer.Commands;

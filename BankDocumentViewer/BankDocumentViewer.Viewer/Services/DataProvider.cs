@@ -1,4 +1,9 @@
-﻿namespace BankDocumentViewer.Viewer.Services;
+﻿using BankDocumentViewer.Viewer.Data.DbContext;
+using BankDocumentViewer.Viewer.Data.Dto;
+using BankDocumentViewer.Viewer.Data.Entities;
+using Microsoft.EntityFrameworkCore;
+
+namespace BankDocumentViewer.Viewer.Services;
 
 public class DataProvider : IDataProvider
 {
