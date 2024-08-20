@@ -1,9 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Viewer.Data.DbContext;
-using Viewer.Models;
-using Viewer.Models.Dto;
-
-namespace Viewer.Services;
+﻿namespace BankDocumentViewer.Viewer.Services;
 
 public class DataProvider : IDataProvider
 {

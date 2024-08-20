@@ -1,8 +1,6 @@
 ﻿using System.IO;
-using Viewer.Models;
-using Viewer.Models.Options;
 
-namespace Viewer.Services;
+namespace BankDocumentViewer.Viewer.Services;
 
 public class FileService : IFileService
 {

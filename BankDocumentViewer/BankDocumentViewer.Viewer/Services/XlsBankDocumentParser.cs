@@ -1,9 +1,7 @@
 ﻿using System.IO;
 using NPOI.HSSF.UserModel;
-using Org.BouncyCastle.Bcpg;
-using Viewer.Models.Dto;
 
-namespace Viewer.Services;
+namespace BankDocumentViewer.Viewer.Services;
 
 public class XlsBankDocumentParser : IBankDocumentParser
 {

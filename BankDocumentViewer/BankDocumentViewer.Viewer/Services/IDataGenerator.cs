@@ -1,6 +1,4 @@
-﻿using Viewer.Models.Options;
-
-namespace Viewer.Services;
+﻿namespace BankDocumentViewer.Viewer.Services;
 
 public interface IDataGenerator
 {

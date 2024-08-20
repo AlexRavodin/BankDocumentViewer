@@ -1,6 +1,4 @@
-﻿using Viewer.Models.Dto;
-
-namespace Viewer.Services;
+﻿namespace BankDocumentViewer.Viewer.Services;
 
 public interface IBankDocumentParser
 {

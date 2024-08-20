@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
-using Viewer.Models.Options;
+using BankDocumentViewer.Viewer.Data.Options;
 
-namespace Viewer.Services;
+namespace BankDocumentViewer.Viewer.Services;
 
 public class DataGenerator : IDataGenerator
 {
